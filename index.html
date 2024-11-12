@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Constelaciones</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+
 </head>
 <body>
 <header>
     <div>
-        <p class="logomain">Logo</p>
+        <p class="logomain">CELEBRITy</p>
     </div>
     <nav>
         <ul>
@@ -37,7 +38,12 @@
         
 
     </section>
-        
+    
+    <section id="consteladores">
+        <div class="consteladoresContainer">
+            
+        </div>
+    </section>
     
 
     <section id="event-details">
@@ -78,39 +84,43 @@
 
 
     <section class="history">
-        <h2>Historias destacadas</h2>
-        <div class="galleryCards">
-            <div class="cardGallery">
-                <div class="cardGaleryImgdiv">
-                    <img src="https://img.freepik.com/vector-premium/coleccion-esquemas-constelaciones-estrellas-cielo-nocturno-cielo-estrellado-oscuro-colinas-bosque-montaje_608997-193.jpg" alt="Imagen historia 1">
+        <div class="historyContainer">
+            <h2>Historias destacadas</h2>
+            <div class="galleryCards">
+                <div class="cardGallery">
+                    <div class="cardGaleryImgdiv">
+                        <img src="./assets/img/defaultimghistory.avif" alt="Imagen historia 1">
+                    </div>
+                    <p class="cardGaleryText">Historia destacada 1</p>
+                    <p class="cardGalerydate">23 de Noviembre</p>
                 </div>
-                <p class="cardGaleryText">Historia destacada 1</p>
-                <p class="cardGalerydate">23 de Noviembre</p>
-            </div>
-            <div class="cardGallery">
-                <div class="cardGaleryImgdiv">
-                    <img src="https://img.freepik.com/vector-premium/coleccion-esquemas-constelaciones-estrellas-cielo-nocturno-cielo-estrellado-oscuro-colinas-bosque-montaje_608997-193.jpg" alt="Imagen historia 1">
+                <div class="cardGallery">
+                    <div class="cardGaleryImgdiv">
+                        <img src="./assets/img/defaultimghistory.avif" alt="Imagen historia 1">
+                    </div>
+                    <p class="cardGaleryText">Historia destacada 2</p>
+                    <p class="cardGalerydate">24 de Noviembre</p>
                 </div>
-                <p class="cardGaleryText">Historia destacada 2</p>
-                <p class="cardGalerydate">24 de Noviembre</p>
-            </div>
-            <div class="cardGallery">
-                <div class="cardGaleryImgdiv">
-                    <img src="https://img.freepik.com/vector-premium/coleccion-esquemas-constelaciones-estrellas-cielo-nocturno-cielo-estrellado-oscuro-colinas-bosque-montaje_608997-193.jpg" alt="Imagen historia 1">
+                <div class="cardGallery">
+                    <div class="cardGaleryImgdiv">
+                        <img src="./assets/img/defaultimghistory.avif" alt="Imagen historia 1">
+                    </div>
+                    <p class="cardGaleryText">Historia destacada 3</p>
+                    <p class="cardGalerydate">25 de Noviembre</p>
                 </div>
-                <p class="cardGaleryText">Historia destacada 3</p>
-                <p class="cardGalerydate">25 de Noviembre</p>
-            </div>
-            <div class="cardGallery">
-                <div class="cardGaleryImgdiv">
-                    <img src="https://img.freepik.com/vector-premium/coleccion-esquemas-constelaciones-estrellas-cielo-nocturno-cielo-estrellado-oscuro-colinas-bosque-montaje_608997-193.jpg" alt="Imagen historia 1">
+                <div class="cardGallery">
+                    <div class="cardGaleryImgdiv">
+                        <img src="./assets/img/defaultimghistory.avif" alt="Imagen historia 1">
+                    </div>
+                    <p class="cardGaleryText">Historia destacada 4</p>
+                    <p class="cardGalerydate">26 de Noviembre</p>
                 </div>
-                <p class="cardGaleryText">Historia destacada 4</p>
-                <p class="cardGalerydate">26 de Noviembre</p>
+                
             </div>
+            <button class="prevBtn">&#10094;</button>
+            <button class="nextBtn">&#10095;</button>
         </div>
-        <button class="prevBtn">&#10094;</button>
-        <button class="nextBtn">&#10095;</button>
+       
     </section>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
@@ -141,7 +151,8 @@
             window.addEventListener('resize', updateCarousel);
         });
     </script>
- 
+    
+
 
 
 </main>

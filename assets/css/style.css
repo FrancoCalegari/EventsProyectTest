@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'mainLogoFont';
+    src: url('/../assets/font/giazaLogofont.woff2');
+  }
+
 * {
     padding: 0;
     margin: 0;
@@ -10,11 +15,12 @@ html {
 
 :root {
     --backgroundColorCardstransparent: #41578d5e;
+    --mainFontColor:#e4e2dd;
 }
 
 body {
     background-color: #1a1818;
-    color: white;
+    color: var(--mainFontColor);
 }
 
 header {
@@ -23,6 +29,7 @@ header {
     border: solid #41578d5e 2px;
     backdrop-filter: blur(4px);
     flex-direction: row;
+    align-items: center;
     justify-content: space-around;
     padding: 1rem;
     position: fixed;
@@ -42,12 +49,18 @@ nav ul {
 }
 
 nav ul li a {
-    color: white;
+    color: var(--mainFontColor);
     text-decoration: none;
 }
 
 nav ul li a:visited {
-    color: white;
+    color: var(--mainFontColor);
+}
+
+.logomain{
+    width: 8rem;
+    font-family: mainLogoFont;
+    font-size: 1.5rem;
 }
 
 #hero {
@@ -64,6 +77,7 @@ nav ul li a:visited {
     background: linear-gradient(to bottom, rgba(255, 11, 11, 0) 0%, rgba(39, 37, 37, 0) 80%, #1a1818 95%, #1a1818 100%);
     z-index: 12;
 }
+
 
 .herocard {
     background-color: var(--backgroundColorCardstransparent);
@@ -91,7 +105,7 @@ nav ul li a:visited {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 3rem;
+    margin: 6rem 0 6rem 0;
 }
 
 .card {
@@ -102,21 +116,38 @@ nav ul li a:visited {
     border-radius: 15px;
 }
 
+.card a:visited{
+    color: var(--mainFontColor);
+}
+
+.card li {
+    list-style: none;
+}
+
+.historyContainer{
+    background: linear-gradient(to bottom, rgba(255, 11, 11, 0) 0%, rgba(39, 37, 37, 0) 80%, #1a1818 95%, #1a1818 100%);
+    background: linear-gradient(to top, rgba(255, 11, 11, 0) 0%, rgba(39, 37, 37, 0) 80%, #1a1818 95%, #1a1818 100%);
+
+    padding-top: 6rem;
+}
+
 .history{
     display: flex;
     flex-direction: column;
     height: 40rem;
-    margin-top: 3rem;
     overflow: hidden;
     position: relative;
+    background-size: cover;
+    background-image: url('../img/background.jpg');
+    
 }
 
 .history button {
     position: absolute;
-    top: 50%;
+    top: 55%;
     transform: translateY(-50%);
     background-color: rgba(0,0,0,0.5);
-    color: white;
+    color: var(--mainFontColor);
     border: none;
     font-size: 2rem;
     cursor: pointer;
@@ -153,8 +184,8 @@ nav ul li a:visited {
 .cardGallery {
     display: flex;
     flex-direction: column;
-    height: 30rem;
-    width: 250px;
+    height: 25rem;
+    width: auto;
     border: solid #41578d5e 3px;
     border-radius: 15px;
     position: relative;
@@ -164,25 +195,28 @@ nav ul li a:visited {
     position: absolute;
     bottom: 2.2rem;
     left: 1rem;
+    z-index: 2;
 }
 
 .cardGalerydate{
     position: absolute;
     bottom: 1rem;
     left: 1rem;
+    z-index: 2;
 }
 
 .cardGaleryImgdiv img{
-    object-fit: fill;
+    object-fit: cover;
     height: 100%;
+    width: 100%;
 }
 
 .cardGaleryImgdiv {
-    background-color: blue;
-    width: auto;
+    width: 13rem;
     height: 100%;
     overflow: hidden;
     border-radius: 15px;
+   
 }
 
 
@@ -197,5 +231,5 @@ footer{
 }
 
 footer p a:visited{
-    color: white;
+    color: var(--mainFontColor);
 }
