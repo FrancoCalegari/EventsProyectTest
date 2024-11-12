@@ -107,6 +107,29 @@ nav ul li a:visited {
     flex-direction: column;
     height: 40rem;
     margin-top: 3rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.history button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    z-index: 1;
+}
+
+.history .prevBtn {
+    left: 10px;
+}
+
+.history .nextBtn {
+    right: 10px;
 }
 
 .history h2 {
@@ -121,7 +144,10 @@ nav ul li a:visited {
     flex-direction: row;
     height: 35rem;
     gap: 20px;
-    overflow: hidden;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+    padding-left: 5rem;
+    margin: auto;
 }
 
 .cardGallery {
@@ -159,12 +185,6 @@ nav ul li a:visited {
     border-radius: 15px;
 }
 
-
-
-.history button{
-    position: absolute;
-    left: 50%;
-}
 
 footer{
     display: flex;

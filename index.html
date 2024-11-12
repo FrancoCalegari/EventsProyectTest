@@ -112,6 +112,35 @@
         <button class="prevBtn">&#10094;</button>
         <button class="nextBtn">&#10095;</button>
     </section>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const prevBtn = document.querySelector('.prevBtn');
+            const nextBtn = document.querySelector('.nextBtn');
+            const galleryCards = document.querySelector('.galleryCards');
+            let currentIndex = 0;
+    
+            function updateCarousel() {
+                const cardWidth = document.querySelector('.cardGallery').offsetWidth;
+                galleryCards.style.transform = `translateX(${-currentIndex * (cardWidth + 20)}px)`;
+            }
+    
+            prevBtn.addEventListener('click', () => {
+                if (currentIndex > 0) {
+                    currentIndex--;
+                    updateCarousel();
+                }
+            });
+    
+            nextBtn.addEventListener('click', () => {
+                if (currentIndex < galleryCards.children.length - 1) {
+                    currentIndex++;
+                    updateCarousel();
+                }
+            });
+    
+            window.addEventListener('resize', updateCarousel);
+        });
+    </script>
  
 
 
