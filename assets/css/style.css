@@ -225,19 +225,7 @@ nav ul li a:visited {
 }
 
 
-footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    text-align: center;
-    background-color: var(--backgroundColorCardstransparent);
-    border: solid #41578d5e 2px;
-}
 
-footer p a:visited{
-    color: var(--mainFontColor);
-}
 
 #consteladores {
     position: relative;
@@ -255,6 +243,10 @@ footer p a:visited{
     border-radius: 15px;
     width: 60%;
     margin: auto;
+}
+.consteladoresContainer h2 {
+    padding: 1rem;
+    font-family: mainLogoFont;
 }
 
 .consteladorCardContainer {
@@ -323,3 +315,18 @@ footer p a:visited{
     }
 }
 
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+    background-color: var(--backgroundColorCardstransparent);
+    border: solid #41578d5e 2px;
+    gap: 1rem;
+}
+
+footer a:visited{
+    color: var(--mainFontColor);
+}

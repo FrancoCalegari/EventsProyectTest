@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Constelaciones</title>
     <link rel="stylesheet" href="./assets/css/style.css">
-
+    <link rel="stylesheet" href="./assets/css/mainResponsive.css">
+    <script src="https://kit.fontawesome.com/274f77f0e3.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <header>
@@ -14,9 +15,9 @@
     </div>
     <nav>
         <ul>
-            <li><a href="#">Info</a></li>
-            <li><a href="#">Ayuda</a></li>
-            <li><a href="#">Contactos</a></li>
+            <li><a href="#event-details">Info</a></li>
+            <li><a href="#event-details">Ayuda</a></li>
+            <li><a href="#footer">Contactos</a></li>
         </ul>
     </nav>
 </header>
@@ -51,12 +52,12 @@
             const height = canvas.height = canvas.offsetHeight;
         
             const points = [
-                { x: width / 2, y: height / 4 },
+                { x: width / 2, y: height / 8 },
                 { x: width / 2 - 50, y: height / 2 },
                 { x: width / 2 + 50, y: height / 2 },
-                { x: width / 2 - 100, y: height - 50 },
-                { x: width / 2, y: height - 100 },
-                { x: width / 2 + 100, y: height - 50 }
+                { x: width / 2 - 100, y: height - 10 },
+                { x: width / 2, y: height - 50 },
+                { x: width / 2 + 100, y: height - 10 }
             ];
         
             const links = [
@@ -235,12 +236,20 @@
     </section>
     
     
-
+<a href=""></a>
 
 
 </main>
 
-<footer>
+<footer id="footer">
+    <div class="contactsectionfooter">
+        <h3>Contacto</h3>
+        <ul>
+            <li class="contactlink"><a href="https://www.instagram.com/celebrittyeventtos/" style="font-family:mainLogoFont ;"><i class="fa-brands fa-instagram"></i>CELEBRITy</a></li>
+            <li class="contactlink"><a href="https://wa.me/5492634570447" style="font-family:mainLogoFont ;"><i class="fa-brands fa-whatsapp"></i>CELEBRITy</a></li>
+            <li class="contactlink"></li>
+        </ul>
+    </div>
     <p>&copy;<a href="#">Franco Calegari</a></p>
 </footer>
 

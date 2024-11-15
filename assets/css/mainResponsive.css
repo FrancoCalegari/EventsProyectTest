@@ -1,0 +1,156 @@
+/* General breakpoints for responsiveness */
+
+/* For mobile devices (max width 480px) */
+@media only screen and (max-width: 480px) {
+    header {
+        width: 95%;
+        padding: 0.5rem;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    .logomain {
+        font-size: 1.2rem;
+        width: auto;
+    }
+
+    .herocontainer {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .herocard {
+        max-width: 100%;
+        height: auto;
+        padding: 1rem
+    }
+
+    .carditem {
+        width: 90%;
+    }
+
+
+    footer {
+        padding: 1rem;
+    }
+
+    #consteladores .consteladoresContainer {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .subcard {
+        width: 100%;
+    }
+
+    .subcard button {
+        width: 100%;
+    }
+}
+
+/* For tablets (max width 768px) */
+@media only screen and (max-width: 768px) {
+    header {
+        width: 90%;
+        padding: 1rem;
+    }
+
+    .logomain {
+        font-size: 1.3rem;
+        width: auto;
+        padding-bottom: 0.5rem;
+    }
+
+    .herocontainer {
+        flex-direction: column;
+        padding-top: 12rem;
+        padding-bottom: 9rem;
+        height: auto;
+    }
+
+    .herocard {
+        max-width: 100%;
+        height: auto;
+        padding: 1.5rem;
+    }
+
+    .carditem {
+        width: 80%;
+    }
+
+
+
+
+
+    footer {
+        padding: 1.5rem;
+    }
+
+    #consteladores .consteladoresContainer {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .subcard {
+        width: 35%;
+        margin: auto;
+    }
+
+    .subcard button {
+        width: 100%;
+    }
+
+    .historyContainer{
+        background: linear-gradient(to top, rgba(255, 11, 11, 0) 0%, rgba(39, 37, 37, 0) 80%, #1a1818 95%, #1a1818 100%);
+        padding-top: 0rem;
+        padding-bottom: 2rem;
+    }
+}
+
+/* For large screens or desktops (min width 1024px) */
+@media only screen and (min-width: 1024px) {
+    header {
+        width: 80%;
+        padding: 1rem;
+    }
+
+    .logomain {
+        font-size: 1.5rem;
+    }
+
+    .herocontainer {
+        flex-direction: row;
+        padding-top: 5rem;
+    }
+
+    .herocard {
+        max-width: 400px;
+        height: 16rem;
+    }
+
+    .carditem {
+        width: 60%;
+    }
+
+
+
+
+
+
+    footer {
+        padding: 2rem;
+    }
+
+    #consteladores .consteladoresContainer {
+        width: 60%;
+        padding: 15px;
+    }
+
+    .subcard {
+        width: 150px;
+    }
+
+    .subcard button {
+        width: auto;
+    }
+}
